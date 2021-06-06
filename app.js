@@ -360,6 +360,11 @@ app.post('/failure',function(req,res){
     res.redirect('/')
 });
 
-app.listen(8000,function(){
-    console.log("Port started Corona3 @ 8000!!")
+let port = process.env.PORT;
+if(port == null | port == ""){
+    port = 8000;
+}
+
+app.listen(port,function(){
+    console.log("Port has started Corona Final!!")
 })
