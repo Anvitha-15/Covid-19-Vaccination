@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 //mongoose.connect("mongodb://localhost:27017/expoDB" , {useNewUrlParser:true , useUnifiedTopology:true});
-mongoose.connect('mongodb+srv://admin-anvitha:test@123@cluster0.dwxvq.mongodb.net/ExposysDB' , {useNewUrlParser:true , useUnifiedTopology:true});
+mongoose.connect('mongodb+srv://admin-anvitha:*******@cluster0.dwxvq.mongodb.net/ExposysDB' , {useNewUrlParser:true , useUnifiedTopology:true});
 
 const expoSchema = new mongoose.Schema({
     userName:String,
